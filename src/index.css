@@ -4,12 +4,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #000235;
   color: white;
 }
 
-body{
-  background-color: #000235;
-}
+/* Navbar */
 
 header {
   display: flex;
@@ -30,67 +32,122 @@ a {
   text-decoration: none;
 }
 
-div> div{
-    display: flex;
-    flex-direction: column;
-}
-
-img{
-    /* flex: 0 0 auto; */
-
-    object-fit: cover;
-    margin: 1rem;
-
-}
-
-.frame{
-  height: 100vh;
+img {
+  object-fit: cover;
+  margin: 1rem;
 }
 
 /* sections */
 section {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* frame */
+.frame {
+  min-width: 10rem;
+  max-width: 40rem;
+  flex: 1 1 20rem;
+  margin: 0px 25px;
+  padding: 0;
+  height: 100vh;
+  /* border: 10px solid red; */
+}
+
+/* Frame header */
+.frame_header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  width: 100%;
+}
+
+.frame_header h1 {
+  margin-right: auto;
+}
+
+.frame_header span {
+  margin: 0 0.5rem;
+  font-size: 2.5em;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 20px;
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: red;
+  width: 100%;
+  color: black;
+  margin: 0 0 10px;
+}
+
+.card_header > p {
+  font-size: 2.5em;
+  border: 1px solid gray;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  padding: -9px 2px 11px;
+}
+/* card status */
+.card_status {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.card_status > p:nth-child(1) {
+  background-color: aqua;
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+.card_status > p:nth-child(2) {
+  background-color: aquamarine;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+/* card profile */
+.card_profile {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  gap: 8px;
+  margin: 10px 0;
 }
 
-section> div{
-    /* margin: 2rem 2rem; */
-    overflow: hidden;
+.card_profile_initials {
+  background-color: brown;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-
+.card_profile_date {
+  color: black;
+}
 /* sm
 @media (min-width: 640px) {
 } */
 
 /* md */
 @media (min-width: 768px) {
+  /* Navbar */
   header ul {
     display: block;
   }
-
-  div> h1{
-    margin: 2rem;
-  }
-
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-  section > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 0 30%;
-    min-width: 30%;
-    margin: 2rem;
-  }
-
 }
-
 
 /* lg
 @media (min-width: 1024px) {

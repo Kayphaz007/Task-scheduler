@@ -13,17 +13,17 @@ body {
 
 /* Navbar */
 
-header {
+body>header {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
-header ul {
+header nav {
   display: none;
 }
 
-header li {
+header a {
   display: inline-block;
   margin: 0 0.6rem;
 }
@@ -37,12 +37,12 @@ img {
   margin: 1rem;
 }
 
-/* sections */
-section {
+/* main */
+main {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* frame */
@@ -52,7 +52,6 @@ section {
   flex: 1 1 20rem;
   margin: 0px 25px;
   padding: 0;
-  height: 100vh;
   /* border: 10px solid red; */
 }
 
@@ -98,7 +97,7 @@ section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
-  padding: -9px 2px 11px;
+  padding: 0px 2px 11px;
 }
 /* card status */
 .card_status {
@@ -144,7 +143,7 @@ section {
 /* md */
 @media (min-width: 768px) {
   /* Navbar */
-  header ul {
+  header nav {
     display: block;
   }
 }

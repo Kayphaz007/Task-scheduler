@@ -1,0 +1,22 @@
+.whole_page{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(36, 1fr)/repeat(12, 1fr);
+}
+.navbar{
+    background-color: var(--color-navigation-topbar-background);
+    grid-column: 1/13;
+    grid-row: 1/3;
+}
+.sidebar{
+    background-color: var(--color-navigation-sidebar-background);
+    grid-column: 1/3;
+    grid-row: 3/37;
+}
+.page{
+    background-color: var(--color-navigation-body-background);
+    grid-column: 3/13;
+    grid-row: 3/37;
+}
+

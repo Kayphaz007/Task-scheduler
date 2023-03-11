@@ -1,0 +1,5 @@
+.sb_section {
+  height: 100%;
+  background-color: var(--color-navigation-sidebar-background);
+  color: var(--color-navigation-text);
+}

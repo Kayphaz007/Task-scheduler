@@ -1,0 +1,25 @@
+.frame_header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  width: 100%;
+}
+.cards{
+    overflow-y: scroll;
+    height: 80vh;
+    padding: 15px;
+}
+
+.frame_header h1 {
+  margin-right: auto;
+}
+
+.frame_header span {
+  margin: 0 0.5rem;
+  font-size: 2.5em;
+}
+
+/* others */
+.pointer{
+  cursor: pointer;
+}

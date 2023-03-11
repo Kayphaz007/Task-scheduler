@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: white;
+  overflow: hidden;
+}
+
+:root {
+  --color-navigation-search-background: #424244;
+  --color-navigation-topbar-background: #363639;
+  --color-navigation-sidebar-background: #2e2e30;
+  --color-navigation-body-background: #252628;
+  --color-navigation-text: #f5f4f3;
+  --color-navigation-text-weak: #a2a0a2;
+  --color-navigation-text-weak-hover: #f5f4f3;
+}

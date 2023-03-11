@@ -1,0 +1,10 @@
+.myTask{
+    display: flex;
+    /* justify-content: start; */
+}
+
+.myTask .frame{
+    flex: 1 0 0;
+    margin: 0 0px;
+    padding: 0 10px;
+}

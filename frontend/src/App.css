@@ -1,22 +1,22 @@
 .whole_page{
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template: repeat(36, 1fr)/repeat(12, 1fr);
+    display: flex;
+    flex-flow: row wrap;
+
 }
 .navbar{
-    background-color: var(--color-navigation-topbar-background);
-    grid-column: 1/13;
-    grid-row: 1/3;
+    flex: 0 0 100%;
+    height: 7vh;
 }
 .sidebar{
     background-color: var(--color-navigation-sidebar-background);
-    grid-column: 1/3;
-    grid-row: 3/37;
+    flex: 0 0 18vw;
+    height: 93vh;
 }
 .page{
     background-color: var(--color-navigation-body-background);
-    grid-column: 3/13;
-    grid-row: 3/37;
+    flex: 1 0 8vw;
+    height: 93vh;
 }
 

@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import { Home, MyTasks } from "./pages";
+import Board from "./components/Board";
+import List from "./components/List";
 
 function App() {
   return (
@@ -20,7 +22,10 @@ function App() {
         <div className="page">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/MyTasks" element={<MyTasks />} />
+            <Route path="mytasks" element={<MyTasks />}>
+              <Route path="board" element={<Board />} />
+              <Route path="list" element={<List />} />
+            </Route>
           </Routes>
         </div>
       </section>

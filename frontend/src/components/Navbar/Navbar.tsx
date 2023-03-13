@@ -16,7 +16,7 @@ const Navbar = () => {
       </form>
       <div className="nb_list">
         <a href="#">Trial: 19 days left</a>
-        <button className="nb_billing">Add billing info</button>
+        <button className="nb_billing_button">Add billing info</button>
         <p className="nb_profile">AA</p>
       </div>
     </header>

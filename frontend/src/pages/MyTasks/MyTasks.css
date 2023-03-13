@@ -1,6 +1,63 @@
+/* Header */
+/* main header */
+.mtMainHead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 1px solid white;
+}
+
+.mtMainHead_profile{
+    padding: 15px;
+    background-color: yellow;
+    color: black;
+    border-radius: 40px;
+}
+
+.mtMainHead_mid{
+    flex: 1 0 0;
+}
+.mtMainHead_mid{
+    flex: 1 0 0;
+
+}
+.mtMainHead_mid_first{
+
+}
+.mtMainHead_mid_second>ul{
+display: flex;
+gap: 20px;
+}
+.mtMainHead_mid_third{
+    display: flex;
+    gap: 10px;
+    
+}
+/* Sub header */
+.mtSubHead{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
+.mtSubHead_date{
+    flex: 1 0 0;
+}
+
+
+
+
+
+
+
+
 .myTask{
     display: flex;
-    /* justify-content: start; */
+    justify-content: flex-start;
 }
 
 .myTask .frame{
@@ -8,3 +65,5 @@
     margin: 0 0px;
     padding: 0 10px;
 }
+
+

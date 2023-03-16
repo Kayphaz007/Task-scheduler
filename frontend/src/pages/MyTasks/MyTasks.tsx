@@ -5,7 +5,7 @@ import { NavLink, Outlet, Route, Routes } from "react-router-dom";
 import Board from "../../components/Board";
 
 const MyTasks = () => {
-  const link="/mytasks"
+  const link = "/mytasks";
   return (
     <>
       <section>
@@ -19,14 +19,26 @@ const MyTasks = () => {
               </div>
               <div className="mtMainHead_mid_second">
                 <ul>
-                  <li>List</li>
+                  <NavLink to={`${link}/list`}>
+                    <li className="">
+                      <span>List</span>
+                    </li>
+                  </NavLink>
                   <NavLink to={`${link}/board`}>
-            <li className="">
-              <span>Board</span>
-            </li>
-          </NavLink>
-                  <li>Calendar</li>
-                  <li>Files</li>
+                    <li className="">
+                      <span>Board</span>
+                    </li>
+                  </NavLink>
+                  <NavLink to={`${link}/calendar`}>
+                    <li className="">
+                      <span>Calendar</span>
+                    </li>
+                  </NavLink>
+                  <NavLink to={`${link}/files`}>
+                    <li className="">
+                      <span>Files</span>
+                    </li>
+                  </NavLink>
                 </ul>
               </div>
             </div>
@@ -35,10 +47,9 @@ const MyTasks = () => {
               <p>Customize</p>
             </div>
           </div>
-
+          <hr />
         </header>
-        <Outlet/>
-
+        <Outlet />
       </section>
     </>
   );

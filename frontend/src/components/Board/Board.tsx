@@ -14,6 +14,7 @@ const Board = () => {
           <span>Sort</span>
         </p>
       </div>
+      <hr />
       <main className="myTask">
         <div className="frame">
           <Frame />

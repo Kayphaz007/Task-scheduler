@@ -57,15 +57,15 @@ const Sidebar = () => {
           </NavLink>
         </ul>
       </article>
-      <hr style={{ width: "100%" }} />
+      <hr/>
       <article className="sSection">
         <h1 className="link"><span>My Workspace</span> <AiOutlinePlus/></h1>
         <p className="link">profile and colaborators</p>
         <p className="link">task</p>
       </article>
-      <hr style={{ width: "100%" }} />
+      <hr/>
       <article className="tSection"><span>Invite teammates</span></article>
-      <hr style={{ width: "100%" }} />
+      <hr/>
       <article className="lSection"><span>Help & getting started</span></article>
     </section>
   );

@@ -10,8 +10,8 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: white;
-  color: white;
-  /* overflow: hidden; */
+  color: var(--color-navigation-text);
+  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   /* border: 1px solid red; */
 }
@@ -44,4 +44,7 @@ body {
   --color-navigation-omnibutton-border: #565557;
   --color-navigation-workflow-builder-background-dots: #565557;
   --color-navigation-portfolio-icon-overlay: rgba(30, 31, 33, 0.4);
+
+  /* card color */
+  --color-card-background: #292B2D;
 }

@@ -5,8 +5,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    padding: 0 20px;
-    border-bottom: 1px solid white;
+    padding: 5px 20px;
+
 }
 
 .mtMainHead_profile{
@@ -33,37 +33,6 @@ gap: 20px;
 .mtMainHead_mid_third{
     display: flex;
     gap: 10px;
-    
+
 }
-/* Sub header */
-.mtSubHead{
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 10px 20px;
-    border-bottom: 1px solid white;
-}
-
-.mtSubHead_date{
-    flex: 1 0 0;
-}
-
-
-
-
-
-
-
-
-.myTask{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.myTask .frame{
-    flex: 1 0 0;
-    margin: 0 0px;
-    padding: 0 10px;
-}
-
 

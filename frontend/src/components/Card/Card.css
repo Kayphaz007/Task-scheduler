@@ -1,5 +1,5 @@
 .card {
-  background-color: antiquewhite;
+  background-color: var(--color-card-background);
   border-radius: 1rem;
   margin: 1rem 0;
   padding: 10px;
@@ -9,9 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  color: red;
   width: 100%;
-  color: black;
   margin: 0 0 10px;
 }
 
@@ -58,5 +56,5 @@
 }
 
 .card_profile_date {
-  color: black;
+color: var(--color-navigation-text-weak);
 }

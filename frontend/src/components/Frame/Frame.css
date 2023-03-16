@@ -4,10 +4,10 @@
   align-items: baseline;
   width: 100%;
 }
-.cards{
-    overflow-y: scroll;
-    height: 80vh;
-    padding: 15px;
+.cards {
+  overflow-y: scroll;
+  height: 72vh;
+  padding: 15px;
 }
 
 .frame_header h1 {
@@ -19,7 +19,32 @@
   font-size: 2.5em;
 }
 
+.frame_form {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-navigation-text);
+  color: var(--color-navigation-text);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 10px;
+}
+
+.frame_form > input{
+  background-color: transparent;
+  border: none;
+}
+
+.frame_form > input:focus{
+  outline: none;
+}
+
 /* others */
-.pointer{
+.pointer {
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+::placeholder{
+  color: var(--color-navigation-text-weak);
 }

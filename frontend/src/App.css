@@ -1,3 +1,8 @@
+hr {
+    background-color: var(--color-navigation-border);
+    height: 1px;
+    border: none;
+}
 .whole_page{
     width: 100vw;
     height: 100vh;

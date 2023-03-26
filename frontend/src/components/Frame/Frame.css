@@ -31,6 +31,8 @@
 .frame_form > input{
   background-color: transparent;
   border: none;
+  color: var(--color-navigation-text);
+  caret-color: var(--color-navigation-text);
 }
 
 .frame_form > input:focus{

@@ -13,16 +13,7 @@ type CardValueInt = {
   };
 }[];
 
-const defaultCard = {
-  title: "Learn Node",
-  priority: "low",
-  status: "At risk",
-  user: "AA",
-  date: {
-    start: "27 Feb",
-    end: "1 Mar",
-  },
-};
+
 const CardValue: CardValueInt = [
   {
     title: "What i want to learn",
@@ -63,36 +54,42 @@ const Frame = () => {
       setFormVisibility2("hidden");
     }
   };
-  // const closeForm2 = (e: any) => {
-  //   if (formVisibility2 && !formRef2?.current?.contains(e.target)) {
-  //     setFormVisibility2("hidden");
-  //   }
-  // };
+
   // set state for form visibility
   const [formVisibility, setFormVisibility] = useState("hidden");
   const [formVisibility2, setFormVisibility2] = useState("hidden");
   // set state to update cards
 
+  const [name, setName] = useState('');
   const [card, setCard] = useState(CardValue);
-  const updateCards1 = [defaultCard, ...card];
-  const updateCards2 = [...card, defaultCard];
-  const createNewCard = () => {
-    setCard(updateCards1);
-  };
-  const createNewCard1 = () => {
-    setCard(updateCards2);
-  };
 
   // creating onclick and onfocus
   const onFocusClick = (aref: any) => {
-    aref?.current?.focus();
+    aref.current?.focus();
   };
-  // on submit
-  const onSubmitFunc = (e: any) => {
+  // on submit for top form
+  const onSubmitFunc1 = (e: any) => {
     e.preventDefault();
-    defaultCard.title = htmlref.current?.value || "";
-    createNewCard();
-    onClear();
+    if (!name) return;
+    const defaultCard = {...CardValue[0], title: name}
+    CardValue.unshift(defaultCard)
+    console.log(defaultCard);
+    // createNewCard();
+    setName('')
+    setFormVisibility("hidden");
+  };
+  // on submit for bottom form
+  const onSubmitFunc2 = (e: any) => {
+    e.preventDefault();
+    if (!name) return;
+    const defaultCard = {...CardValue[0], title: name}
+    CardValue.push(defaultCard)
+    console.log(defaultCard);
+
+    // createNewCard();
+    setName('');
+    setFormVisibility2("hidden");
+
   };
 
   const onClear = () => {
@@ -135,19 +132,21 @@ const Frame = () => {
           <form
             className={` ${formVisibility} frame_form`}
             action=""
-            onSubmit={onSubmitFunc}
+            onSubmit={onSubmitFunc1}
             ref={formRef}
           >
             <input
-              name="name"
+              // name="name"
               type="text"
               placeholder="Write a task name"
               ref={htmlref}
               autoFocus
+              value={name}
+              onChange={(e)=>setName(e.target.value)}
             />
           </form>
           {/* create card */}
-          {card.map((cardI, index) => (
+          {CardValue.map((cardI, index) => (
             <div key={index}>
               <Card cardItems={cardI} />
             </div>
@@ -155,15 +154,19 @@ const Frame = () => {
           <form
             className={` ${formVisibility2} frame_form`}
             action=""
-            onSubmit={onSubmitFunc}
+            onSubmit={onSubmitFunc2}
             ref={formRef2}
           >
             <input
-              name="name"
+              // name="name"
               type="text"
               placeholder="Write a task name"
               ref={htmlref2}
+              value={name}
+              onChange={(e)=>setName(e.target.value)}
+
             />
+            <p>hello</p>
           </form>
           <p
             onClick={() => {

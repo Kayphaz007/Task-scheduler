@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  color: var(--color-navigation-text);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --color-navigation-search-background: #424244;
+  --color-navigation-topbar-background: #363639;
+  --color-navigation-sidebar-background: #2e2e30;
+  --color-navigation-body-background: #252628;
+  --color-navigation-text: #f5f4f3;
+  --color-navigation-text-weak: #a2a0a2;
+  --color-navigation-text-weak-hover: #f5f4f3;
+  --color-navigation-icon: #a2a0a2;
+  --color-navigation-icon-hover: #f5f4f3;
+  --color-navigation-border: #424244;
+  --color-navigation-border-hover: #6a696a;
+  --color-navigation-border-active: #a2a0a2;
+  --color-navigation-border-strong: #fff;
+  --color-navigation-background-hover: rgba(255, 255, 255, 0.06);
+  --color-navigation-background-active: rgba(255, 255, 255, 0.11);
+  --color-navigation-background-active-rgb: 255, 255, 255;
+  --color-navigation-background-weak: #2e2e30;
+  --color-navigation-background-medium: #363639;
+  --color-navigation-background-strong: #424244;
+  --color-navigation-body-background: #252628;
+  --color-navigation-body-background-rgb: 37, 38, 40;
+  --color-navigation-body-background-strong: #2a2b2d;
+  --color-navigation-body-background-strong-rgb: 42, 43, 45;
+  --color-navigation-omnibutton-background: #2e2e30;
+  --color-navigation-omnibutton-border: #565557;
+  --color-navigation-workflow-builder-background-dots: #565557;
+  --color-navigation-portfolio-icon-overlay: rgba(30, 31, 33, 0.4);
+
+  /* card color */
+  --color-card-background: #292B2D;
+}

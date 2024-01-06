@@ -1,0 +1,38 @@
+/* Header */
+/* main header */
+.mtMainHead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 20px;
+
+}
+
+.mtMainHead_profile{
+    padding: 15px;
+    background-color: yellow;
+    color: black;
+    border-radius: 40px;
+}
+
+.mtMainHead_mid{
+    flex: 1 0 0;
+}
+.mtMainHead_mid{
+    flex: 1 0 0;
+
+}
+.mtMainHead_mid_first{
+
+}
+.mtMainHead_mid_second>ul{
+display: flex;
+gap: 20px;
+}
+.mtMainHead_mid_third{
+    display: flex;
+    gap: 10px;
+
+}
+

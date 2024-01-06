@@ -1,0 +1,89 @@
+.nb_header {
+  height: 100%;
+  background-color: var(--color-navigation-topbar-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.nb_header nav {
+  display: none;
+}
+
+.nb_header a {
+  color: var(--color-navigation-text);
+  display: inline-block;
+  margin: 0 0.6rem;
+  text-decoration: none;
+}
+/* Logo */
+.nb_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+/* Search Bar */
+.nb_search {
+  width: 25%;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-navigation-search-background);
+  border-radius: 20px;
+  position: relative;
+}
+.borderFocus {
+  border: 1px solid white;
+}
+
+.search_logo {
+  background-color: inherit;
+}
+
+.search_input {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  color: aliceblue;
+}
+.search_input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+/* List */
+.nb_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.nb_list a {
+  text-decoration: underline;
+}
+.nb_billing_button{
+  background-color: darkgoldenrod;
+  color: black;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+}
+.nb_list .nb_profile {
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  border-radius: 90px;
+}
+@media (min-width: 768px) {
+  /* Navbar */
+  .nb_header nav {
+    display: block;
+  }
+}

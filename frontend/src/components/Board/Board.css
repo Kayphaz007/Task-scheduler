@@ -1,0 +1,30 @@
+/* Sub header */
+.mtSubHead{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.mtSubHead_date{
+    flex: 1 0 0;
+}
+
+
+
+
+
+
+
+
+.myTask{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.myTask .frame{
+    flex: 1 0 0;
+    margin: 0 0px;
+    padding: 0 10px;
+}
+
